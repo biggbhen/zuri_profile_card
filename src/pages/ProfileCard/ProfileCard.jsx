@@ -2,6 +2,10 @@ import React from 'react';
 import Button from '../../component/Button/Button';
 import ProfileImage from '../../assets/DisplayPhoto.jpg';
 import { MyCard } from './ProfileCardStyle';
+import slack from '../../assets/slack.png';
+import github from '../../assets/Icon.png';
+import zuri from '../../assets/zuri.png';
+import I4G from '../../assets/I4G.png';
 
 const ProfileCard = () => {
 	return (
@@ -48,6 +52,19 @@ const ProfileCard = () => {
 					btnLink={'book__design'}
 				/>
 			</div>
+			<div className='socials'>
+				<img src={slack} alt='slack' style={{ marginRight: '1.5rem' }} />
+				<img src={github} alt='github' />
+			</div>
+			<footer>
+				<div>
+					<img src={zuri} alt='zuri' />
+				</div>
+				<p>HNG Internship 9 Frontend Task</p>
+				<div>
+					<img src={I4G} alt='i4g' />
+				</div>
+			</footer>
 		</MyCard>
 	);
 };

@@ -41,4 +41,16 @@ export const MyCard = styled.div`
 		padding: 15px;
 		margin-top: 1rem;
 	}
+	.socials {
+		// border: 1px solid white;
+		margin-top: 1rem;
+	}
+	footer {
+		border-top: 1px solid rgb(255, 255, 255, 0.3);
+		padding: 15px;
+		margin-top: 2rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 `;
