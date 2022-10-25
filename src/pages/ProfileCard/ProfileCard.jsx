@@ -2,39 +2,24 @@ import React from 'react';
 import Button from '../../component/Button/Button';
 import ProfileImage from '../../assets/DisplayPhoto.jpg';
 import { MyCard } from './ProfileCardStyle';
-import { Link } from 'react-router-dom';
 
 const ProfileCard = () => {
 	return (
 		<MyCard>
-			<span class='mentor'>MENTOR</span>
+			{/* <span class='mentor'>MENTOR</span> */}
 			<div className='round'>
 				<img src={ProfileImage} alt='Display' id='profile__img' />
 			</div>
-			<h3>WebMekanic</h3>
+			<h3>BiggKodes</h3>
 			<p>Frontend Engineer</p>
-			<div class='buttons'>
-				<button class='primary' id='twitter'>
-					<a
-						className='myTwitter'
-						href='https://twitter.com/webmekanic_'
-						target='_blank'
-						rel='noreferrer'>
-						Twitter
-					</a>
-				</button>
-				<button class='primary ghost'>
-					<Link className='contactLink' to='/contact'>
-						Contact
-					</Link>
-				</button>
-				<p id='slack' className='slackUser'>
-					webmekanic
-				</p>
-			</div>
 
 			{/* Buttons Links */}
 			<div className='myLinks'>
+				<Button
+					text={'Twitter'}
+					btnId={'btn__zuri'}
+					btnLink={'https://twitter.com/Bigg_kodes'}
+				/>
 				<Button
 					text={'Zuri Team'}
 					btnId={'btn__zuri'}
