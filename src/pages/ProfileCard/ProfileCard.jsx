@@ -20,6 +20,9 @@ const ProfileCard = () => {
 				<img src={ProfileImage} alt='Display' id='profile__img' />
 			</div>
 			<h3>Ugochukwu Benjamin</h3>
+			<h3 id='slack' style={{ display: 'none' }}>
+				biggkodes
+			</h3>
 
 			{/* Buttons Links */}
 			<div className='myLinks'>
@@ -57,12 +60,7 @@ const ProfileCard = () => {
 				/>
 			</div>
 			<div className='socials'>
-				<img
-					src={slack}
-					alt='slack'
-					style={{ marginRight: '1.5rem' }}
-					id='slack'
-				/>
+				<img src={slack} alt='slack' style={{ marginRight: '1.5rem' }} />
 				<img src={github} alt='github' />
 			</div>
 			<footer>
