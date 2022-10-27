@@ -6,22 +6,26 @@ import slack from '../../assets/slack.png';
 import github from '../../assets/Icon.png';
 import zuri from '../../assets/zuri.png';
 import I4G from '../../assets/I4G.png';
+import share from '../../assets/share.png';
+import shareMobile from '../../assets/shareMobile.png';
 
 const ProfileCard = () => {
 	return (
 		<MyCard>
-			{/* <span class='mentor'>MENTOR</span> */}
+			<div className='shareIcon'>
+				<img src={share} className='share' alt='share' />
+				<img src={shareMobile} className='shareMobile' alt='shareMobile' />
+			</div>
 			<div className='round'>
 				<img src={ProfileImage} alt='Display' id='profile__img' />
 			</div>
-			<h3>BiggKodes</h3>
-			<p>Frontend Engineer</p>
+			<h3>Ugochukwu Benjamin</h3>
 
 			{/* Buttons Links */}
 			<div className='myLinks'>
 				<Button
 					text={'Twitter'}
-					btnId={'btn__zuri'}
+					btnId={'twitter'}
 					btnLink={'https://twitter.com/Bigg_kodes'}
 				/>
 				<Button
@@ -38,22 +42,27 @@ const ProfileCard = () => {
 					text={'Python Books'}
 					btnId={'book__python'}
 					btnLink={
-						'https://books.zuri.team/python-for-beginners?ref_id=<webmekanic>'
+						'https://books.zuri.team/python-for-beginners?ref_id=<biggkodes>'
 					}
 				/>
 				<Button
 					text={'Background Check for Coders'}
 					btnId={'pitch'}
-					btnLink={'https://background.zuri.team'}
+					btnLink={'https://backgroundcheck.zuri.team'}
 				/>
 				<Button
 					text={'Design Books'}
 					btnId={'book__design'}
-					btnLink={'book__design'}
+					btnLink={'https://books.zuri.team/design-rules'}
 				/>
 			</div>
 			<div className='socials'>
-				<img src={slack} alt='slack' style={{ marginRight: '1.5rem' }} />
+				<img
+					src={slack}
+					alt='slack'
+					style={{ marginRight: '1.5rem' }}
+					id='slack'
+				/>
 				<img src={github} alt='github' />
 			</div>
 			<footer>
