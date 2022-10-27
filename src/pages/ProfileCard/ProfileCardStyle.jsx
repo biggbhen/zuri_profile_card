@@ -5,7 +5,7 @@ export const MyCard = styled.div`
 	background-color: ${({ theme }) => theme.colors.cardColor};
 	border-radius: 4px;
 	box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.3);
-	color: #b3b8cd;
+	color: ${({ theme }) => theme.colors.textColor}
 	padding: 1.875rem 0;
 	position: relative;
 	width: 1000px;
@@ -42,7 +42,6 @@ export const MyCard = styled.div`
 		margin-top: 1rem;
 	}
 	.socials {
-		// border: 1px solid white;
 		margin-top: 1rem;
 	}
 	footer {
@@ -53,4 +52,5 @@ export const MyCard = styled.div`
 		justify-content: space-between;
 		align-items: center;
 	}
+	
 `;
