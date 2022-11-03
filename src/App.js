@@ -1,10 +1,11 @@
 import ProfileCard from './pages/ProfileCard/ProfileCard';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
 	return (
-		<>
-			<ProfileCard />
-		</>
+		<Routes>
+			<Route path='/' element={<ProfileCard />} />
+		</Routes>
 	);
 }
 
