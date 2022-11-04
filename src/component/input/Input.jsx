@@ -18,11 +18,11 @@ const Container = styled.div`
 	}
 `;
 
-const Input = ({ type, placeholder, label }) => {
+const Input = ({ type, placeholder, label, id, className }) => {
 	return (
-		<Container>
+		<Container className={className}>
 			<label>{label}</label>
-			<input type={type} placeholder={placeholder} />
+			<input type={type} placeholder={placeholder} id={id} />
 		</Container>
 	);
 };
