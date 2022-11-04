@@ -62,6 +62,10 @@ export const Grid = styled.div`
 `;
 
 export const FormButton = styled(MyButton)`
+	border-radius: 5px;
 	background: #1570ef;
 	color: white;
+	:hover {
+		background: #175cd3;
+	}
 `;

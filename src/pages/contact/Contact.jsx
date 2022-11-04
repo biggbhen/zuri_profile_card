@@ -32,13 +32,14 @@ const Contact = () => {
 					<textarea
 						rows={'7'}
 						id='message'
+						required
 						placeholder={
 							"Send me a message and I'll reply you as soon as possible..."
 						}></textarea>
 				</Textarea>
 			</Grid>
 			<Checkbox>
-				<input type='checkbox' />
+				<input type='checkbox' required />
 				<label htmlFor='checkbox'>
 					You agree to providing your data to Biggkodes who may contact you.
 				</label>

@@ -22,7 +22,7 @@ const Input = ({ type, placeholder, label, id, className }) => {
 	return (
 		<Container className={className}>
 			<label>{label}</label>
-			<input type={type} placeholder={placeholder} id={id} />
+			<input type={type} placeholder={placeholder} id={id} required />
 		</Container>
 	);
 };
