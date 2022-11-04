@@ -4,10 +4,10 @@ import ProfileImage from '../../assets/DisplayPhoto.jpg';
 import { MyCard } from './ProfileCardStyle';
 import slack from '../../assets/slack.png';
 import github from '../../assets/Icon.png';
-import zuri from '../../assets/zuri.png';
-import I4G from '../../assets/I4G.png';
 import share from '../../assets/share.png';
 import shareMobile from '../../assets/shareMobile.png';
+import { NavLink } from 'react-router-dom';
+import { MyButton } from '../../component/Button/ButtonStyle';
 
 const ProfileCard = () => {
 	return (
@@ -58,20 +58,15 @@ const ProfileCard = () => {
 					btnId={'book__design'}
 					btnLink={'https://books.zuri.team/design-rules'}
 				/>
+				<NavLink to='/contact'>
+					<MyButton id='contact'>Contact me</MyButton>
+				</NavLink>
 			</div>
+
 			<div className='socials'>
 				<img src={slack} alt='slack' style={{ marginRight: '1.5rem' }} />
 				<img src={github} alt='github' />
 			</div>
-			<footer>
-				<div>
-					<img src={zuri} alt='zuri' />
-				</div>
-				<p>HNG Internship 9 Frontend Task</p>
-				<div>
-					<img src={I4G} alt='i4g' />
-				</div>
-			</footer>
 		</MyCard>
 	);
 };

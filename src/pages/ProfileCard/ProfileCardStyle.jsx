@@ -4,7 +4,7 @@ export const MyCard = styled.div`
 	margin: 1.2rem auto 1.2rem auto;
 	background-color: ${({ theme }) => theme.colors.cardColor};
 	border-radius: 4px;
-	box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.3);
+	// box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.3);
 	color: ${({ theme }) => theme.colors.textColor};
 	padding: 1.875rem 0;
 	position: relative;
@@ -77,14 +77,7 @@ export const MyCard = styled.div`
 	.socials {
 		margin-top: 1rem;
 	}
-	footer {
-		border-top: 1px solid rgb(255, 255, 255, 0.3);
-		padding: 15px;
-		margin-top: 2rem;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
+
 	@media ${({ theme }) => theme.mediaQueries['below630']} {
 		footer {
 			flex-direction: column;

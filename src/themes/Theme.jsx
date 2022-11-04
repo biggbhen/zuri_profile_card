@@ -1,7 +1,7 @@
 const theme = {
 	colors: {
 		background: '#28223F',
-		cardColor: '#F4F5F7',
+		cardColor: '#fff',
 		yellow: '#FEBB0B',
 		buttonColor: '#EAECF0',
 		buttonHoverColor: '#D0D5DD',
