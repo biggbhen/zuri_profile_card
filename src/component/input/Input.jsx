@@ -21,7 +21,7 @@ const Container = styled.div`
 const Input = ({ type, placeholder, label, id, className }) => {
 	return (
 		<Container className={className}>
-			<label>{label}</label>
+			<label htmlFor={id}>{label}</label>
 			<input type={type} placeholder={placeholder} id={id} required />
 		</Container>
 	);
