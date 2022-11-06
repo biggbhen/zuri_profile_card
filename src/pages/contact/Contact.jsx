@@ -44,7 +44,7 @@ const Contact = () => {
 					You agree to providing your data to Biggkodes who may contact you.
 				</label>
 			</Checkbox>
-			<FormButton id='btn__submit'>send message</FormButton>
+			<FormButton id='btn_submit'>send message</FormButton>
 		</Form>
 	);
 };
